@@ -9,6 +9,7 @@ import lightheadedone from './assets/work/lightheaded 1.png';
 import lightheadedtwo from './assets/work/lightheaded vegas.png';
 import saint from './assets/work/saint.png';
 import sttf from './assets/work/sttf.png';
+import FadeInSection from './FadeInSection';
 
 class Work extends React.Component {
     constructor(props) {
@@ -18,9 +19,23 @@ class Work extends React.Component {
         };
     }
 
+    preloadImage(url) {
+        const img = new Image();
+        img.src = url;
+    }
+
     renderSub() {
         const active = this.state.emphasis;
         const allEmphasised = active.localeCompare('all') === 0;
+        this.preloadImage(bhomfs);
+        this.preloadImage(emptycals);
+        this.preloadImage(eyeshadow);
+        this.preloadImage(ironman);
+        this.preloadImage(lightheadedone);
+        this.preloadImage(lightheadedtwo);
+        this.preloadImage(saint);
+        this.preloadImage(sttf);
+
         return <div className="parent">
         <div className='work'>
         <Row>
@@ -62,32 +77,47 @@ class Work extends React.Component {
         </Row>
         </div>
         <div>
-        
         <Row className="w-75 mx-auto workRow">
             <Col sm={6} className={((active.localeCompare('branding') === 0 || allEmphasised) ? '' : 'hide')}>
-                <img id="bhomfs" src={bhomfs} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="bhomfs" src={bhomfs} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
-                <img id="ironman" src={ironman} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="ironman" src={ironman} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('functional') === 0 || allEmphasised) ? '' : 'hide')}>
-                <img id="eyeshadow" src={eyeshadow} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="eyeshadow" src={eyeshadow} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
-                <img id="lightheadedtwo" src={lightheadedtwo} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="lightheadedtwo" src={lightheadedtwo} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('web') === 0 || allEmphasised) ? '' : 'hide')}>
-            <a href="https://stemtothefuture.org"
-               target="_blank" rel="noopener noreferrer"><img id="sttf" src={sttf} className="piece img-fluid" alt="bhomfs"></img></a>
+                <FadeInSection>
+                    <a href="https://stemtothefuture.org"
+                    target="_blank" rel="noopener noreferrer"><img id="sttf" src={sttf} className="piece img-fluid" alt="bhomfs"></img></a>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
-               <img id="emptycals" src={emptycals} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="emptycals" src={emptycals} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
-                <img id="saint" src={saint} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="saint" src={saint} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
-                <img id="lightheadedone" src={lightheadedone} className="piece img-fluid" alt="bhomfs"></img>
+                <FadeInSection>
+                    <img id="lightheadedone" src={lightheadedone} className="piece img-fluid" alt="bhomfs"></img>
+                </FadeInSection>
             </Col>
         </Row>
         </div>
