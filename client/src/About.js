@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import animation from './assets/me.gif';
 import resume from './assets/resumerachelwang.pdf';
 
@@ -11,10 +12,10 @@ const About = () => (
           who is rachel wang?
       </h1>
     <Row id="aboutBody">
-      <Col sm={5} id="image">
+      <Col md={4} id="image">
         <img src={animation} id="me" className="img-fluid float-left" alt="animation"></img>
       </Col>
-      <Col sm={7} id="bio">
+      <Col md={7} id="bio">
         <h4 className="text-left">
           a <span className="emphasis">creative human</span> (she / her) raised in charlottesville, virginia, currently living
            in los angeles, california. an interdisciplinary designer thriving at the intersection

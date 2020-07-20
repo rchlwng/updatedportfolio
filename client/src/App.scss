@@ -13,6 +13,10 @@ html, body {
     transition: 1s opacity;
 }
 
+#root {
+  height: 100%;
+}
+
 .home, .about, .contact, .work {
     background-color: $backgroundColor;
     float: left;
