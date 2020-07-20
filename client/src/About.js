@@ -5,6 +5,13 @@ import Container from 'react-bootstrap/Container';
 import animation from './assets/me.gif';
 import resume from './assets/resumerachelwang.pdf';
 
+function preloadImage(url) {
+  const img = new Image();
+  img.src = url;
+};
+
+preloadImage(animation);
+
 const About = () => (
   <div className="parent">
   <div className='about'>
