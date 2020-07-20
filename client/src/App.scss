@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$backgroundColor: #0d0c0f;
+$boom: #fc0d31;
+$gradient: linear-gradient(70deg, rgb(252, 98, 27) 0%, rgba(255,5,20,1) 35%, rgb(255, 0, 128) 100%);
+
+html, body {
+    background-color: $backgroundColor;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+.home, .about, .contact, .work {
+    background-color: $backgroundColor;
+    float: left;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.home {
+    vertical-align: middle;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#myNav {
+    padding-left: 1.5%;
+    padding-top: 1%;
+}
+
+.App {
+    text-align: center;
+    height: 100%;
+}
+
+.color-nav {
+    background-color: $backgroundColor;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    font-weight: 600;
+    color: white;
+    &:hover {
+        background: $gradient;
+        background-clip: text;
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        animation: shine 2s ease infinite;
+        @keyframes shine {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, p, a, ul {
+    color: white;
+}
+  
+h1 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+
+.mainBody {
+    padding-top: 12%;
+    height: 100%;
+}
+
+.parent {
+    min-height: 100%; /* set height as you need */
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+}
+
+.socials {
+    margin-top: auto;
+    width: 10%;
+    padding-left: 3rem;
+    margin-left: 0;
+    margin-bottom: 3rem;
+    padding-top: 1.5rem;
+}
+
+#tattoo {
+    width: 80%;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+.worklink {
+    color: white;
+    border: none;
+    background-color: $backgroundColor;
+    &:hover {
+        text-shadow: 1px 1px 1px $boom;
+    }
+}
+
+.emphasis {
+    background: $gradient;
+    background-clip: text;
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    animation: shine 2s ease infinite;
+    @keyframes shine {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+    &:hover {
+        text-shadow: none;
+    }
+}
+
+button:focus {
+    outline: 0;
+}
+
+div.col-md-3 {
+    padding-left: 0;
+}
+
+.workRow {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.col-sm-6 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.myList {
+    display: block;
+    text-align: left;
+    li {
+        display: block;
+    }
+}
+
+.aboutRow {
+    margin-top: 4rem;
+}
+
+#aboutBody {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.link {
+    &:hover {
+        background: $gradient;
+        background-clip: text;
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        animation: shine 2s ease infinite;
+        @keyframes shine {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+    }
+}
+
+#mailform {
+    margin-top: 2rem;
+    textarea, input {
+        height: auto;
+        display: block;
+        line-height: 1.5;
+        outline: none;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        width: 90%;
+        background-color: $backgroundColor;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid transparent;
+            border-image: $gradient;
+            border-image-slice: 1;
+            color: white;
+        }
+    }
+    button {
+        border: none;
+        background-color: $backgroundColor;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    // autofill
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px $backgroundColor inset !important;
+        box-shadow: 0 0 0 30px $backgroundColor inset !important;
+        -webkit-text-fill-color: white !important;
+    }
+}
+
+// mobile styling
+@media only screen and (max-width: 960px) {
+    .greeting {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    .contact {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .home {
+        padding-top: 4rem;
+    }
+    .socials {
+        margin-bottom: 2rem;
+        padding-left: 1.5rem;
+    }
+    .nav-item {
+        text-align: right;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        padding-right: 1rem;
+    }
+    #myNav {
+        background: linear-gradient(to left, $backgroundColor 40%, transparent 99%); 
+    }
+    .navbar-dark .navbar-toggler {
+        color: white;
+    }
+    #logo {
+        width: 2.5rem;
+    }
+    .worklink {
+        font-size: .7rem;
+    }
+    #resume {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        writing-mode: horizontal-tb;
+    }
+    .aboutRow {
+        margin-top: 0;
+    }
+    #image {
+        margin-bottom: 2rem;
+    }
+    #aboutBody {
+        padding-top: 2rem;
+    }
+}
+
+// columnn resize
+@media only screen and (max-width: 576px) {
+    .col-sm-8 {
+        padding-top: 2rem;
+    }
+    .commission {
+        padding-top: 4rem;
+    }
+}
+
+
