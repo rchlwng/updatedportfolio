@@ -22,7 +22,7 @@ class Contact extends React.Component {
     
     axios({
       method: "POST", 
-      url:"http://localhost:3002/send", 
+      url:"https://reactfoliorach.herokuapp.com/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success'){
