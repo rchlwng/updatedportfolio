@@ -44,7 +44,7 @@ const About = () => (
                target="_blank" rel="noopener noreferrer"><span className="link">teaching</span></a></li>
               <li>(sustainable) fashion</li>
               <li>activism</li>
-              <li>travelling! (maybe not right now)</li>
+              <li>travelling! (however, not at the moment)</li>
             </ul>
           </Col>
           <Col sm={4}>
