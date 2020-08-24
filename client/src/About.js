@@ -42,9 +42,9 @@ const About = () => (
                target="_blank" rel="noopener noreferrer"><span className="link">spotify playlists</span></a></li>
               <li><a href="https://stemtothefuture.org"
                target="_blank" rel="noopener noreferrer"><span className="link">teaching</span></a></li>
-              <li>fashion and style</li>
-              <li>logic puzzles</li>
-              <li>running in the rain</li>
+              <li>(sustainable) fashion</li>
+              <li>activism</li>
+              <li>travelling! (maybe not right now)</li>
             </ul>
           </Col>
           <Col sm={4}>
