@@ -9,6 +9,7 @@ import lightheadedone from './assets/work/lightheaded 1.png';
 import lightheadedtwo from './assets/work/lightheaded vegas.png';
 import saint from './assets/work/saint.png';
 import sttf from './assets/work/sttf.png';
+import scope from './assets/work/scope.png';
 import FadeInSection from './FadeInSection';
 
 class Work extends React.Component {
@@ -35,6 +36,7 @@ class Work extends React.Component {
         this.preloadImage(lightheadedtwo);
         this.preloadImage(saint);
         this.preloadImage(sttf);
+        this.preloadImage(scope);
 
         return <div className="parent">
         <div className='work'>
@@ -78,6 +80,13 @@ class Work extends React.Component {
         </div>
         <div>
         <Row className="w-75 mx-auto workRow">
+            <Col sm={6} className={((active.localeCompare('web') === 0 || allEmphasised || active.localeCompare('branding') === 0) ? '' : 'hide')}>
+                <FadeInSection>
+                    <a href="https://scopeusc.com"
+                        target="_blank" rel="noopener noreferrer">
+                    <img id="scope" src={scope} className="piece img-fluid" alt="scope"></img></a>
+                </FadeInSection>
+            </Col>
             <Col sm={6} className={((active.localeCompare('branding') === 0 || allEmphasised) ? '' : 'hide')}>
                 <FadeInSection>
                     <img id="bhomfs" src={bhomfs} className="piece img-fluid" alt="bhomfs"></img>
