@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import instagram from './assets/instagram.png';
 import linkedin from './assets/linkedin.png';
-import dribbble from './assets/dribbble.png';
+import github from './assets/github.png';
 
 const Socials = () => (
     <Container className="socials">
@@ -20,8 +20,8 @@ const Socials = () => (
             </a>
         </Col>
         <Col xs={4}>
-            <a href='https://dribbble.com/wngrch' rel='noopener'>
-            <img src={dribbble} width="20" alt="dribbble"></img>
+            <a href='https://github.com/rchlwng' rel='noopener'>
+            <img src={github} width="20" alt="github"></img>
             </a>
         </Col>
       </Row>
