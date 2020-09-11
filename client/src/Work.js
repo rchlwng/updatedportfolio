@@ -59,12 +59,6 @@ class Work extends React.Component {
                 </Col>
                 <Col md={3}>
                     <button className="worklink"
-                    onClick={() => this.setState({emphasis: 'functional'})}>
-                        <span className={(active.localeCompare('functional') === 0 ? 'emphasis' : '')}>functional</span>
-                    </button>
-                </Col>
-                <Col md={3}>
-                    <button className="worklink"
                     onClick={() => this.setState({emphasis: 'branding'})}>
                         <span className={(active.localeCompare('branding') === 0 ? 'emphasis' : '')}>branding</span>
                     </button>
@@ -98,7 +92,7 @@ class Work extends React.Component {
                     <img id="ironman" src={ironman} className="piece img-fluid" alt="bhomfs"></img>
                 </FadeInSection>
             </Col>
-            <Col sm={6} className={((active.localeCompare('functional') === 0 || allEmphasised) ? '' : 'hide')}>
+            <Col sm={6} className={((active.localeCompare('visuals') === 0 || allEmphasised) ? '' : 'hide')}>
                 <FadeInSection>
                     <img id="bodos" src={bodos} className="piece img-fluid" alt="bhomfs"></img>
                 </FadeInSection>
