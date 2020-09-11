@@ -92,7 +92,7 @@ class Work extends React.Component {
                     <img id="ironman" src={ironman} className="piece img-fluid" alt="bhomfs"></img>
                 </FadeInSection>
             </Col>
-            <Col sm={6} className={((active.localeCompare('visuals') === 0 || allEmphasised) ? '' : 'hide')}>
+            <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
                 <FadeInSection>
                     <img id="bodos" src={bodos} className="piece img-fluid" alt="bhomfs"></img>
                 </FadeInSection>
