@@ -10,6 +10,7 @@ import lightheadedtwo from './assets/work/lightheaded vegas.png';
 import saint from './assets/work/saint.png';
 import sttf from './assets/work/sttf.png';
 import scope from './assets/work/scope.png';
+import bodos from './assets/work/bodos.png';
 import FadeInSection from './FadeInSection';
 
 class Work extends React.Component {
@@ -30,7 +31,7 @@ class Work extends React.Component {
         const allEmphasised = active.localeCompare('all') === 0;
         this.preloadImage(bhomfs);
         this.preloadImage(emptycals);
-        this.preloadImage(eyeshadow);
+        this.preloadImage(bodos);
         this.preloadImage(ironman);
         this.preloadImage(lightheadedone);
         this.preloadImage(lightheadedtwo);
@@ -99,7 +100,7 @@ class Work extends React.Component {
             </Col>
             <Col sm={6} className={((active.localeCompare('functional') === 0 || allEmphasised) ? '' : 'hide')}>
                 <FadeInSection>
-                    <img id="eyeshadow" src={eyeshadow} className="piece img-fluid" alt="bhomfs"></img>
+                    <img id="bodos" src={bodos} className="piece img-fluid" alt="bhomfs"></img>
                 </FadeInSection>
             </Col>
             <Col sm={6} className={((active.localeCompare('visual') === 0 || allEmphasised) ? '' : 'hide')}>
